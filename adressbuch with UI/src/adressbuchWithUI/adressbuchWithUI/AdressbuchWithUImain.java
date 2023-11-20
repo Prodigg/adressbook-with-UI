@@ -129,6 +129,8 @@ public class AdressbuchWithUImain {
 				internalFrame2.setVisible(false);
 				CreateAdress(Name.getText(), Strasse.getText(), Ort.getText(), PLZ.getText(), Tele.getText());
 				writeFile("save.txt");
+				listData = getAdressIndex();
+				list.setListData(listData.toArray(new String[listData.size()]));
 				
 			}
 		});
